@@ -7,7 +7,7 @@ url = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
 
 def test_cart_button_should_be_present_on_product_page(browser):
     browser.get(url)
-    time.sleep(1)
+    #time.sleep(30)
     cartbutton = WebDriverWait(browser, 10).until(
                  EC.presence_of_element_located((By.CSS_SELECTOR, "button.btn.btn-add-to-basket"))
                  )
